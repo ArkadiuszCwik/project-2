@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+button {
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: arial;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.box {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    animation: create .3s linear both;
+}
+
+@keyframes create {
+    0% {
+        width: 0;
+        height: 0;
+        transform: rotate(0);
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+        transform: rotate(3600deg);
+    }
+}
